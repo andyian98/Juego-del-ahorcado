@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//declaración de funcion
+//declaraciÃ³n de funcion
 void cargar_Array (char palabra_Original[],int dim);
 void dibujarAsteriscos();
 void dibujarGuiones(int dim);
@@ -65,7 +65,7 @@ int main(){
 			
 		for (int i=0; i<=(dim-1); i++){	
 			do{		
-				cout<<"\nIngrese la "<<i+1<<"º letra de la palabra a adivinar"<<endl;
+				cout<<"\nIngrese la "<<i+1<<"Âº letra de la palabra a adivinar"<<endl;
 				cin>>palabra_Intento[i];
 			
 					if(palabra_Original[i]==palabra_Intento[i]){
