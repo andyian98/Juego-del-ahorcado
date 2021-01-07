@@ -1,4 +1,4 @@
-/*Pedir una contraseÒa (3 intentos m·ximo) hasta que la clave sea 123 o 456, 
+/*Pedir una contrase√±a (3 intentos m√°ximo) hasta que la clave sea 123 o 456, 
 usando do<instruction>while(condition)*/
 
 #include<iostream>
@@ -10,14 +10,14 @@ int main(){
 	int contador=3;
 	
 	do{
-		cout<<"Ingrese la contraseÒa"<<endl;
+		cout<<"Ingrese la contrase√±a"<<endl;
 		cin>>clave;
 		contador=contador-1;		
 	}while(clave!="123" || clave!="456" || contador>0);
 	if (clave=="123" || clave=="456"){
-		cout<<"ContraseÒa correcta";
+		cout<<"Contrase√±a correcta";
 	}else{
-		cout<<"ContraseÒa incorrecta, usted agotÛ sus intentos";
+		cout<<"Contrase√±a incorrecta, usted agot√≥ sus intentos";
 	}
 	getch();
 	return 0;
