@@ -13,7 +13,6 @@ bool coinciden;
 int dim=0, cant_Vidas=0;
 
 int main(){	
-	bool variablederetorno;
 		
 	cout<<"Cuantas letras tiene la palabra a adivinar?"<<endl;
 	cin>>dim;	
@@ -30,8 +29,7 @@ int main(){
 	dibujarGuiones(dim);
 	cout<<"\nCantidad de vidas disponibles: "<<cant_Vidas<<endl;	
 	
-	
-	variablederetorno=comparador(palabra_Original,palabra_Intento,dim);
+	comparador(palabra_Original,palabra_Intento,dim);
 	
 	if(coinciden==true){
 		cout<<"\nFELICITACIONES! GANASTE";
@@ -47,14 +45,14 @@ int main(){
 		cout<<"\nIngrese la "<<i+1<<" letra de la palabra"<<endl;
 		cin>>palabra_Original[i];
 		}
-	}	
-	
+	}
+		
 	void dibujarAsteriscos(){
 		for (int i=0; i<=19; i++){
 			cout<<"*";
 		}
-	}	
-	
+	}
+		
 	void dibujarGuiones(int dim){
 		for (int i=0; i<=(dim-1); i++){
 		cout<<" _ ";
@@ -77,7 +75,5 @@ int main(){
 						cout<<"Letra "<<i+1<<" incorrecta. Quedan "<<cant_Vidas<<" vidas"<<endl;
 						}
 			}while (i<dim && cant_Vidas>0);	
-		}
-		return coinciden;		
+		}		
 	}
-
